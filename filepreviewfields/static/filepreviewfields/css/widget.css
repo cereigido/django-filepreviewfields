@@ -1,0 +1,19 @@
+.filepreviewfield video, .filepreviewfield img {
+    margin-right: 4px;
+    height: 150px;
+    float: left;
+}
+
+.filepreviewfield .buttons {
+    float: left;
+    margin-right: 10px;
+}
+
+.filepreviewfield span {
+    position: relative;
+    top: 10px;
+}
+
+.filepreviewfield .hidden {
+    display: none;
+}
