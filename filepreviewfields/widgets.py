@@ -20,7 +20,7 @@ class FilePreviewWidget(ClearableFileInput):
                     <input type="button" value="Clear" class="default clear%(clear_class)s">
                 </div>
                 <span></span>
-                <input id="id_%(name)s" name="video" type="file" class="hidden" />
+                <input id="id_%(name)s" name="%(name)s" type="file" class="hidden" />
                 <input id="%(name)s-clear_id" name="%(name)s-clear" type="checkbox" class="hidden" />
             </div>
         ''' % {'name': name, 'preview_html': preview_html, 'clear_class': clear_class}
