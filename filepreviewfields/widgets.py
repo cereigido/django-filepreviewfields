@@ -11,7 +11,7 @@ class FilePreviewWidget(ClearableFileInput):
     def render(self, name, value, attrs=None):
         preview_html = self.get_preview_html(value)
         video = '<video src="%s%s" controls></video>' % (settings.MEDIA_URL, value) if value else ''
-        clear_class = ' hidden' if not hasattr(value, 'file') else ''
+        clear_class = ' hidden' if not value else ''
         output = '''
             <div class="filepreviewfield">
                 %(preview_html)s
